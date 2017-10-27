@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- 先引入 Vue -->
+    <script src="js/lib/vue.js"></script>
+    <!-- 引入样式 -->
+    <link rel="stylesheet" href="js/lib/elm/index.css">
+    <!-- 引入组件库 -->
+    <script src="js/lib/elm/index.js"></script>
+    <!--引入less-->
+    <!--<script src="js/lib/less.min.js"></script>-->
+    <title>Title</title>
+</head>
+<body>
+    <ol class="app1">
+        <!-- 创建一个 todo-item 组件的实例 -->
+        <todo-item></todo-item>
+        123
+    </ol>
+</body>
+
+
+
+
+
+
+
+
+<script>
+    new Vue({
+       el:.app1;
+    });
+    // 定义名为 todo-item 的新组件
+    Vue.component('todo-item', {
+        template: '<li>这是个待办项</li>'
+    })
+</script>
+</html>
