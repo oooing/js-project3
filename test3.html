@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- 先引入 Vue -->
+    <script src="js/lib/vue.js"></script>
+    <!-- 引入样式 -->
+    <link rel="stylesheet" href="js/lib/elm/index.css">
+    <!-- 引入组件库 -->
+    <script src="js/lib/elm/index.js"></script>
+    <!--引入less-->
+    <!--<script src="js/lib/less.min.js"></script>-->
+    <title>Title</title>
+    <style>
+        .active{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <div id="demo">
+        <a v-bind:class="{ active: isActive }">红色</a>
+        <button v-on:click="ChangeColor(true)">切换颜色</button>
+    </div>
+</body>
+
+
+
+
+
+
+
+
+<script>
+    new Vue({
+        el:"#demo",
+        data:{
+            isActive:true
+        },
+        methods:{
+            ChangeColor(a){
+                
+            }
+        }
+    });
+
+    Vue.component('todo-item', {
+        template: '<li>这是个待办项</li>'
+    })
+</script>
+</html>
